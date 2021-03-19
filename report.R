@@ -1,7 +1,6 @@
 
 
 #import data  
-setwd("C:/Users/Rs_Wi1Liam/Desktop/HZW-Classification") #(set your own pwd)
 df <- read.csv("bank_personal_loan.csv",header=T)
 head(df)
 
