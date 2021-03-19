@@ -5,6 +5,14 @@ setwd("C:/Users/Rs_Wi1Liam/Desktop/HZW-Classification") #(set your own pwd)
 df <- read.csv("bank_personal_loan.csv",header=T)
 head(df)
 
+#Download Packages
+install.packages("rpart")
+install.packages("rpart.plot")
+install.packages("adabag")
+install.packages("randomForest")
+install.packages("e1071")
+install.packages("AUC")
+
 df$Personal.Loan<-factor(df$Personal.Loan, levels=c(0,1),labels=c("No", "Yes")) 
 head(df)
 table(df[,'Personal.Loan'])
